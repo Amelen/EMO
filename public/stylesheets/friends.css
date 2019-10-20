@@ -1,0 +1,103 @@
+body {
+  position:  absolute;
+  width: 100%; 
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.friends {
+	width: 80%;
+	height: 100%;
+	background: #C5FFF1;
+	overflow: auto;
+	display: block;
+    border-spacing: 50px;
+    display: inline-block;
+}
+
+.box {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.menu {
+	background: #FEBDD3;
+	width: 20%;
+	height: 100%;
+	overflow: auto;
+	display: inline-block;
+}
+
+.friendAvatar {
+	margin-top: 5%;
+	margin-left: 10%;
+	width: 250px;
+	height: 250px;
+    border-style: ridge;
+    display: block;
+}
+
+.friendName {
+    display: block;
+    margin-top: 5%;
+    margin-left: 10%;
+    background: #C5FFF1;
+    border-style: ridge;
+    width: 250px;
+	height: 1cm;
+	font-size: 0.85cm;
+	text-align: center;
+}
+
+.menuIMG {
+    margin-top: 20%;
+	margin-left: 5%;
+	width: 200px;
+	height: 200px;
+    border-style: ridge;
+}
+
+.menuName {
+    border-style: ridge;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    background: #FEBDD3;
+    height: 1cm;
+	font-size: 0.85cm;
+	text-align: center;
+}
+
+.bottom { 
+    border-style: ridge;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    background: #C5FFF1;
+    height: 1cm;
+	font-size: 0.85cm;
+	text-align: center;
+}
+
+a {
+    text-decoration: none;
+    border-width: 0;
+} 
+
+.img {
+    border-color: grey; 
+}  
+
+#seach {
+    background: url('/stylesheets/symbols/lupa.png'); 
+    background-size: 100% 100%;
+}  
+
+.red {
+    color:red;
+}  

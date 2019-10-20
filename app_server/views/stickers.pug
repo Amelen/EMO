@@ -1,0 +1,9 @@
+extends library
+
+block div
+  .library
+    each pictogramma in pictograms
+      img.picta(scr= pictogramma.img)
+  footer
+    a(href='/library')  
+      .exit

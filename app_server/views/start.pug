@@ -1,0 +1,30 @@
+extends layout
+  
+block content
+  link(rel='stylesheet', href='/stylesheets/start.css') 
+  .form        
+    form 
+      h1 ВХОД:
+        p.entrance Введите логин:
+        textarea.entrance#textarea_entrance(value = "")
+        p.entrance Введите пароль:
+        textarea.entrance#textarea_entrance(value = "")
+        a(href='/friends')
+          input.entrance#bottom_entrance(type = 'bottom' value= 'ВХОД' readonly)      
+  .form        
+    form
+      p РЕГИСТРАЦИЯ: 
+        p.entrance Имя:
+        input.entrance#textarea_entrance(type='text', name='firstName', value = "", required)
+        p.entrance Фамилия:
+        input.entrance#textarea_entrance(type='text', name='lastName', value = "", required) 
+        p.entrance Учреждение:
+        select.entrance#textarea_entrance(size = 5, name='institution', required)
+          option ЦССВ "Вера.Надежда.Любовь"
+        p.entrance Почта:
+        input.entrance#textarea_entrance(type='email', name='email', value = "", required)        
+        p.entrance Логин:
+        input.entrance#textarea_entrance(type='text', name='username', value = "", required)
+        p.entrance Пароль:
+        input.entrance#textarea_entrance(type='password', name='password', value = "", required)
+        button.entrance#bottom_entrance(type = 'submit') ЗАРЕГИСТРИРОВАТЬСЯ     

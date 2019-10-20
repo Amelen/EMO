@@ -1,0 +1,20 @@
+extends layout
+  
+block content
+  link(rel='stylesheet', href='/stylesheets/friends.css') 
+  .friends
+    each friend in friends
+      .box
+        a(href= friend.page)
+          img.friendAvatar(src= friend.avatar)
+          input.friendName.TC(type = 'textarea' value = friend.name readonly)
+  .menu
+    .img.menuIMG
+    input.menuName.TC(type = 'textarea' value = 'ИМЯ' readonly)
+    a(href='/seach')
+      img.menuIMG#seach  
+    .img.menuIMG
+    a(href='/settings')
+      .img.menuIMG(hidden="true")      
+    a(href='/')
+      input.bottom(type = 'button' value= 'ВЫХОД')      
